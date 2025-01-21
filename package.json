@@ -6,7 +6,7 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "postinstall":"db:migrate:deploy && db:push && db:seed",
+    "postinstall":"turbo run db:migrate:deploy && turbo run db:push && turbo run db:seed",
     "db:migrate:deploy": "turbo run db:migrate:deploy",
     "db:push": "turbo run db:push",
     "db:seed": "turbo run db:seed",
